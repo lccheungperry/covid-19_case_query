@@ -65,7 +65,7 @@ app.MapGet("/get_latest_covid_case_data/{region}/{year}/{month}", async (CovidCa
             o.name != null)
             relatedMeta.Add(o);
     };
-    Console.WriteLine(relatedMeta.Count);
+
     foreach (FileMeta fileMeta in relatedMeta)
     {
         // get data from github
